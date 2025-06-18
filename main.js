@@ -6,9 +6,9 @@ const container = document.getElementById('cardContainer');
 
 button.addEventListener('click', () => {
   const text = input.value.trim();
-  if (text === "") return; // 空なら何もしない
+  if (text === "") return;
 
   const card = createCard(text);
   container.appendChild(card);
-  input.value = ""; // 入力欄リセット
+  input.value = "";
 });
